@@ -1,0 +1,77 @@
+{
+    "/helloworld": {
+        "method": "GET",
+        "output": {
+            "world": "hello"
+        }
+    },
+    "/infinitywar1":{
+        "method": "POST",
+        "input":{
+            "name": "Tony Stark",
+            "alterEgo": "Iron Man",
+            "powers": [
+                "Rich",
+                "Genius"
+            ]
+        },
+        "output":{
+            "died": false
+        }
+    },
+    "/ironman/suits":{
+        "method": "POST",
+        "inputMode": "REGEX",
+        "inputRegex":{
+            "name": "^Mark-[0-9]{1}$"
+        },
+        "output":{
+            "destroyed": false
+        }
+    },
+    "/infinitywar/<war>/<hero>":{
+        "method": "POST",
+        "input":{
+            "<war>":{
+                "1":{
+                    "<hero>":{
+                        "starlord": {
+                            "hated": "YES!"
+                        },
+                        "spidey": {
+                            "hated": "NO!"
+                        }
+                    },
+                    "default":{
+                        "hated": "No"
+                    }
+                },
+                "2":{
+                    "hated": "probably not"
+                }
+            },
+            "default":{
+                "hated": "Idk"
+            }
+        },
+        "output":{
+            "<war>":{
+                "1":{
+                    "<hero>":{
+                        "starlord": {
+                            "response": "THEY ALMOST HAD THE GAUNTLET OFF!"
+                        }
+                    },
+                    "default":{
+                        "response": "Spidey was fun"
+                    }
+                }
+            },
+            "default":{
+                "hated": "Can't wait for infinity war though!"
+            }
+        }
+    } 
+    
+
+}
