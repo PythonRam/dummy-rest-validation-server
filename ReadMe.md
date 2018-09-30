@@ -125,7 +125,9 @@ In this example there are two path variables and inputMode is 'MOCK' by default,
 * When war is 1 and hero is starlord, response will be "THEY ALMOST HAD THE GAUNTLET OFF!". 
 * When war is 1 and hero is not starlord, response will be "Spidey was fun".
 * When war is not 1 and hero is *anything*, response will be "Can't wait for infinity war though!".
- 
+
+#### Configuration Options
+
 | param | Mandatory | Default | Description | Accepted Values |
 |------------|-------------------------|---------|-------------------------------------------------------------------------------|---------------------------------|
 | method | false | ALL | Specifies the method to allow for this path. Accepts all methods by default.  | POST, GET, PUT, DELETE, OPTIONS |
